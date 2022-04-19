@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import HookCounter from "./component/Basics/HookCounter"
+import HookCounterAdvance from "./component/Basics/HookCounterAdvance"
+import HookCounterWithStateAsArray from "./component/Basics/HookCounterWithStateAsArray"
+import HookCounterWithStateAsObject from "./component/Basics/HookCounterWithStateAsObject"
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <HookCounterWithStateAsArray/>
+    </>
+  )
 }
 
-export default App;
+export default App

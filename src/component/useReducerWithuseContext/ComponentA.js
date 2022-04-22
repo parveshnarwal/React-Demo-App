@@ -4,7 +4,6 @@ import { CounterContext } from '../../App'
 const ComponentA = () => {
 
 const contextValue = useContext(CounterContext)
-console.log(contextValue)
 
     return (
         <div>

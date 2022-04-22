@@ -19,6 +19,11 @@ import UsingMultipleUseReducers from "./component/useReducer/UsingMultipleUseRed
 import ComponentA from './component/useReducerWithuseContext/ComponentA'
 import ComponentB from "./component/useReducerWithuseContext/ComponentB"
 import UseRefDemo from "./component/UseRefDemo"
+import DocTitleOne from "./component/CustomHookDemo/DocTitleOne"
+import DocTitleTwo from "./component/CustomHookDemo/DocTitleTwo"
+import CounterOne from "./component/CustomHookDemo/CounterOne"
+import CounterTwo from "./component/CustomHookDemo/CounterTwo"
+import UserForm from "./component/CustomHookDemo/UserForm"
 //import ComponentC from "./component/useReducerWithuseContext/ComponentC"
 
 export const UserContext = React.createContext()
@@ -52,7 +57,7 @@ const App = () => {
 
   return (
     <>
-      <UseRefDemo/>
+      <UserForm/>
     </>
 
     // <>

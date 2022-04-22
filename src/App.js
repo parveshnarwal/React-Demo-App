@@ -7,6 +7,11 @@ import HookMouse from "./component/useEffectHooks/HookMouse"
 import IntervalHookCounter from "./component/useEffectHooks/IntervalHookCounter"
 import MouseContainer from "./component/useEffectHooks/MouseContainer"
 import ComponentC from "./component/useContextHooks/ComponentC"
+import Counter from "./component/useReducer/Counter"
+import CounterWithComplexState from "./component/useReducer/CounterWithComplexState"
+import CounterWithComplexStateAndAction from "./component/useReducer/CounterWithComplexStateAndAction"
+import MultipleCounters from "./component/useReducer/MultipleCounters"
+import UsingMultipleUseReducers from "./component/useReducer/UsingMultipleUseReducers"
 
 export const UserContext = React.createContext()
 
@@ -14,9 +19,10 @@ export const UserContext = React.createContext()
 const App = () => {
   return (
     <>
-      <UserContext.Provider value={'Parvesh'}>
+      {/* <UserContext.Provider value={'Parvesh'}>
         <ComponentC />
-      </UserContext.Provider>
+      </UserContext.Provider> */}
+      <UsingMultipleUseReducers/>
     </>
   )
 }

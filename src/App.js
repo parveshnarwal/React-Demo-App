@@ -7,6 +7,7 @@ import ParentComponent from "./component/UseCallbackHookDemo/ParentComponent"
 import HookMouse from "./component/useEffectHooks/HookMouse"
 import IntervalHookCounter from "./component/useEffectHooks/IntervalHookCounter"
 import MouseContainer from "./component/useEffectHooks/MouseContainer"
+import CounterUseMemo from "./component/useMemoHookDemo/CounterUseMemo"
 //import ComponentC from "./component/useContextHooks/ComponentC"
 import Counter from "./component/useReducer/Counter"
 import CounterWithComplexState from "./component/useReducer/CounterWithComplexState"
@@ -50,7 +51,7 @@ const App = () => {
 
   return (
     <>
-      <ParentComponent/>
+      <CounterUseMemo/>
     </>
 
     // <>

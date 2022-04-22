@@ -3,6 +3,7 @@ import HookCounter from "./component/Basics/HookCounter"
 import HookCounterAdvance from "./component/Basics/HookCounterAdvance"
 import HookCounterWithStateAsArray from "./component/Basics/HookCounterWithStateAsArray"
 import HookCounterWithStateAsObject from "./component/Basics/HookCounterWithStateAsObject"
+import ParentComponent from "./component/UseCallbackHookDemo/ParentComponent"
 import HookMouse from "./component/useEffectHooks/HookMouse"
 import IntervalHookCounter from "./component/useEffectHooks/IntervalHookCounter"
 import MouseContainer from "./component/useEffectHooks/MouseContainer"
@@ -10,6 +11,8 @@ import MouseContainer from "./component/useEffectHooks/MouseContainer"
 import Counter from "./component/useReducer/Counter"
 import CounterWithComplexState from "./component/useReducer/CounterWithComplexState"
 import CounterWithComplexStateAndAction from "./component/useReducer/CounterWithComplexStateAndAction"
+import DataFectchingWithUseReducer from "./component/useReducer/DataFectchingWithUseReducer"
+import DataFecthingTwo from "./component/useReducer/DataFecthingTwo"
 import MultipleCounters from "./component/useReducer/MultipleCounters"
 import UsingMultipleUseReducers from "./component/useReducer/UsingMultipleUseReducers"
 import ComponentA from './component/useReducerWithuseContext/ComponentA'
@@ -47,17 +50,21 @@ const App = () => {
 
   return (
     <>
-      <CounterContext.Provider 
-      value={{
-        countState: count,
-        countDispatch: dispatch
-      }}>
-        Counter : {count}
-        <ComponentA />
-        <ComponentB />
-        <ComponentC />
-      </CounterContext.Provider>
+      <ParentComponent/>
     </>
+
+    // <>
+    //   <CounterContext.Provider 
+    //   value={{
+    //     countState: count,
+    //     countDispatch: dispatch
+    //   }}>
+    //     Counter : {count}
+    //     <ComponentA />
+    //     <ComponentB />
+    //     <ComponentC />
+    //   </CounterContext.Provider>
+    // </>
   )
 }
 
